@@ -7,6 +7,7 @@ import { ProjectsPage } from "@/pages/projects-page";
 import { KanbanPage } from "@/pages/kanban-page";
 import { CalendarPage } from "@/pages/calendar-page";
 import { AnalyticsPage } from "@/pages/analytics-page";
+import { FinancePage } from "@/pages/finance-page";
 
 export function MainLayout() {
   const { user, loading } = useAuth();
@@ -40,6 +41,7 @@ export function MainLayout() {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/calendar" element={<CalendarPage />} />
             <Route path="/analytics" element={<AnalyticsPage />} />
+            <Route path="/finance" element={<FinancePage />} />
             <Route path="*" element={<Navigate to="/projects" replace />} />
           </Routes>
         </main>

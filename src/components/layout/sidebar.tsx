@@ -11,6 +11,7 @@ export function Sidebar() {
     { id: "projects", label: "Projects", icon: Icons.layoutGrid, path: "/projects" },
     { id: "calendar", label: "Calendar", icon: Icons.calendar, path: "/calendar" },
     { id: "analytics", label: "Analytics", icon: Icons.barChart, path: "/analytics" },
+    { id: "finance", label: "Moliyaviy", icon: Icons.wallet, path: "/finance" },
   ]
 
   return (

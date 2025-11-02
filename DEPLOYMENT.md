@@ -29,6 +29,14 @@ git commit -m "Ready for deployment"
 git push origin main
 ```
 
+**Yoki manual deploy:**
+
+```bash
+npm run deploy
+```
+
+Bu `gh-pages` package orqali to'g'ridan-to'g'ri deploy qiladi.
+
 ### 4. Custom Domain Setup
 
 Agar custom domain ishlatayotgan bo'lsangiz:
@@ -67,11 +75,13 @@ GitHub repository ning **Actions** tabida deploy holatini ko'rishingiz mumkin.
 ## 🚀 Production Checklist
 
 - ✅ GitHub Actions workflow tayyor
+- ✅ 404.html plugin GitHub Pages SPA routing muammosini hal qiladi
 - ✅ Environment variables secrets ga qo'shildi
 - ✅ Vite config GitHub Pages ga moslandi
 - ✅ Custom domain sozlandi
 - ✅ Build test local da o'tkazildi
 - ✅ CNAME fayl qo'shildi
+- ✅ gh-pages package qo'shildi (manual deploy uchun)
 
 ---
 

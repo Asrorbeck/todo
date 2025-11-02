@@ -1,9 +1,10 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import path from "path"
+import { viteGhPages404 } from "./vite-gh-pages-plugin"
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), viteGhPages404()],
   base: '/',
   resolve: {
     alias: {
